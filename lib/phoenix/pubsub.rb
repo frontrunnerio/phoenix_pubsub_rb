@@ -40,9 +40,9 @@ module Phoenix
   module Pubsub
 
     class Redis
-      def initialize phoenix_class_name
-        @phoenix_class_name = phoenix_class_name
-        @redis = ::Redis.new(url: "redis://localhost:6379")
+      def initialize(redis_url: 'redis://localhost:6379', phoenix_class: 'Chat.PubSub')
+        @phoenix_class_name = phoenix_class
+        @redis = ::Redis.new(url: redis_url)
       end
 
       def publish topic, event, payload
