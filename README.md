@@ -2,6 +2,13 @@
 
 PhoenixPubsub allows you to publish messages to Phoenix Channels from Ruby. Subscriptions are not implemented (yet).
 
+## Why?
+
+This might be very interesting for people wanting to enrich their Rails app with Realtime capabilities and to leverage the incredible websocket performance of the Erlang VM.
+The awaited Rails 5 release with ActionCable will most likely not feature such an ease of scalability as Elixir/Erlang does.
+
+Also this can help people to transition from Rails to Phoenix.
+
 ## Installation
 
 Add this line to your application's Gemfile:
