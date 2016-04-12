@@ -10,7 +10,7 @@ PhoenixPubsub allows you to publish messages to Phoenix Channels from Ruby. Subs
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'phoenix_pubsub'
+gem 'phoenix_pubsub', github: 'frontrunnerio/phoenix_pubsub_rb'
 ```
 
 And then execute:
@@ -23,7 +23,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+E.g.: using with [sample chat app](https://github.com/chrismccord/phoenix_chat_example):
+
+```ruby
+p = Phoenix::Pubsub::Redis.new(redis_url: 'redis://localhost:6379', phoenix_class: 'Chat.PubSub')
+p.publish 'rooms:lobby', 'new:msg', { user: 'rake', body: 'hello from ruby!' }
+```
+
+### Requirements
+
+  - Redis
+  - Phoenix app with [Redis PubSub adapter](https://github.com/phoenixframework/phoenix_pubsub_redis)
+
+### Sample Chat App
+
+  - Clone Phoenix [Sample Chat app](https://github.com/chrismccord/phoenix_chat_example)
+  - Install and configure the [Redis PubSub adapter](https://github.com/phoenixframework/phoenix_pubsub_redis)
+  - Make sure the demo app is running
+  - Clone this repo, install all dependencies and run `bundle exec rake`
+  - You should see a message coming from Ruby
 
 ## Development
 
