@@ -11,7 +11,9 @@ Gem::Specification.new do |s|
 
   s.authors       = ['Andreas Böhrnsen']
   s.email         = ['andreas@frontrunner.io']
-  s.homepage      = "https://github.com/frontrunnerio/phoenix_pubsub_rb"
+  s.homepage      = 'https://github.com/frontrunnerio/phoenix_pubsub_rb'
+
+  s.license       = 'MIT'
 
   s.required_ruby_version = '>= 2.0'
 
