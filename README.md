@@ -1,15 +1,16 @@
-# PhoenixPubsubRedis
+# Phoenix Pubsub for Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/phoenix_pubsub_redis`. To experiment with that code, run `bin/console` for an interactive prompt.
+Still waiting for ActionCable to be released and you want to leverage the unbeaten performance of the Erlang VM for Websocket connections?
+Then this Gem might be for you.
 
-TODO: Delete this and the text above, and describe your gem
+PhoenixPubsub allows you to publish messages to Phoenix Channels from Ruby. Subscriptions are not implemented (yet).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'phoenix_pubsub_redis'
+gem 'phoenix_pubsub'
 ```
 
 And then execute:
@@ -18,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install phoenix_pubsub_redis
+    $ gem install phoenix_pubsub
 
 ## Usage
 
