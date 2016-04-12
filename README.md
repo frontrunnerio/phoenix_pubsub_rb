@@ -14,7 +14,7 @@ Also this can help people to transition from Rails to Phoenix.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'phoenix_pubsub', github: 'frontrunnerio/phoenix_pubsub_rb'
+gem 'phoenix_pubsub'
 ```
 
 And then execute:
