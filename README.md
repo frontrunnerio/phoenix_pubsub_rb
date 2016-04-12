@@ -1,8 +1,5 @@
 # Phoenix Pubsub for Ruby
 
-Still waiting for ActionCable to be released and you want to leverage the unbeaten performance of the Erlang VM for Websocket connections?
-Then this Gem might be for you.
-
 PhoenixPubsub allows you to publish messages to Phoenix Channels from Ruby. Subscriptions are not implemented (yet).
 
 ## Installation
