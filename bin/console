@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
+require 'bundler/setup'
 require 'phoenix/pubsub'
 
 # You can add fixtures and/or initialization code here to make experimenting
@@ -10,5 +10,5 @@ require 'phoenix/pubsub'
 # require "pry"
 # Pry.start
 
-require "irb"
+require 'irb'
 IRB.start
