@@ -26,7 +26,7 @@ module Erlang
             ETF::Map.new([], [])
           else
             values = flatten.map(&:__erlang_evolve__)
-            ETF::Map.new(*values.each_slice(values.size/2).to_a)
+            ETF::Map.new(*values.each_slice(values.size / 2).to_a)
           end
         end
       end
