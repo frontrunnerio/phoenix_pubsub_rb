@@ -1,5 +1,8 @@
 # Phoenix Pubsub for Ruby
 
+[![Gem Version](https://badge.fury.io/rb/phoenix_pubsub.svg)](https://badge.fury.io/rb/phoenix_pubsub)
+[![Dependency Status](https://gemnasium.com/badges/github.com/frontrunnerio/phoenix_pubsub_rb.svg)](https://gemnasium.com/github.com/frontrunnerio/phoenix_pubsub_rb)
+
 PhoenixPubsub allows you to publish messages to Phoenix Channels from Ruby. Subscriptions are not implemented (yet).
 
 ## Why?
