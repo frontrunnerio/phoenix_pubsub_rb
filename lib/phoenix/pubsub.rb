@@ -52,15 +52,19 @@ module Phoenix
       private
 
       def serialize_message topic, event, payload
-        term = Erlang::Tuple[
-          # {@redis_msg_vsn, node_ref, pool_size, from_pid, topic, msg}
-          1, '', 1, :none, topic, {
-            :__struct__ => :"Elixir.Phoenix.Socket.Broadcast",
-            :event => event,
-            :payload => payload,
-            :topic => topic
-          }
-        ]
+        vsn = 1
+        node_ref = ''
+        fastlane = :nil
+        pool_size = 1
+        from_pid = :none
+        msg = {
+          :__struct__ => :"Elixir.Phoenix.Socket.Broadcast",
+          :event => event,
+          :payload => payload,
+          :topic => topic
+        }
+
+        term = Erlang::Tuple[vsn, node_ref, fastlane, pool_size, from_pid, topic, msg]
         Erlang.term_to_binary term
       end
     end
